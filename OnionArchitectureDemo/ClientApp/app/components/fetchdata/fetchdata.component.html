@@ -1,0 +1,20 @@
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!cars"><em>Loading...</em></p>
+
+<table class='table' *ngIf="cars">
+    <thead>
+        <tr>
+            <th>Make + Model</th>
+            <th>Has Spare Wheel</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let car of cars">
+            <td>{{ car.carName }}</td>
+            <td>{{ car.hasSpareWheel }}</td>
+        </tr>
+    </tbody>
+</table>
