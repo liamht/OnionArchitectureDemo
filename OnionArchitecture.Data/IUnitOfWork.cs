@@ -7,6 +7,8 @@ namespace OnionArchitectureDemo.Data
     {
         IRepository<Car> Cars { get; }
 
+        IRepository<Sale> Sales { get; }
+
         void SaveChanges();
     }
 }

@@ -18,6 +18,19 @@ namespace OnionArchitectureDemo.Data.EntityFramework
             }
         }
 
+        private IRepository<Sale> _sales;
+        public IRepository<Sale> Sales
+        {
+            get
+            {
+                if (_sales == null)
+                {
+                    _sales = new SalesRepository();
+                }
+                return _sales;
+            }
+        }
+
         public void Dispose()
         {
             // todo: When using a database, dispose the context object

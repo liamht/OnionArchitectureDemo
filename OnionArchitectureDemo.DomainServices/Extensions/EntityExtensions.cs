@@ -10,7 +10,16 @@ namespace OnionArchitectureDemo.DomainServices.Extensions
             {
                 HasSpareWheel = car.HasSpareWheel,
                 Make = car.Make,
-                Model = car.Model
+                Model = car.Model,
+                Price = car.Price
+            };
+        }
+
+        internal static Sale ToBusinessEntity(this Data.Entities.Sale sale)
+        {
+            return new Sale()
+            { 
+                 MarkDownPercentage = sale.MarkDownPercentage
             };
         }
     }

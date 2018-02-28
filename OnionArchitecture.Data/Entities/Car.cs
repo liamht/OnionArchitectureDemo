@@ -7,5 +7,7 @@
         public string Model { get; set; }
 
         public bool HasSpareWheel { get; set; }
+
+        public double Price { get; set; }
     }
 }
