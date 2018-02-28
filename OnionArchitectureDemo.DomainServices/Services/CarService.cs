@@ -1,9 +1,9 @@
-﻿using OnionArchitectureDemo.Business.Entities;
-using OnionArchitectureDemo.Business.Extensions;
+﻿using OnionArchitectureDemo.DomainServices.Entities;
+using OnionArchitectureDemo.DomainServices.Extensions;
 using OnionArchitectureDemo.Data;
 using System.Linq;
 
-namespace OnionArchitectureDemo.Business.Services
+namespace OnionArchitectureDemo.DomainServices.Services
 {
     public interface ICarService
     {

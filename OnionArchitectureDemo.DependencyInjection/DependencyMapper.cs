@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using OnionArchitectureDemo.Business.Services;
+using OnionArchitectureDemo.DomainServices.Services;
 using OnionArchitectureDemo.Data;
 using OnionArchitectureDemo.Data.Entities;
 using OnionArchitectureDemo.Data.EntityFramework;

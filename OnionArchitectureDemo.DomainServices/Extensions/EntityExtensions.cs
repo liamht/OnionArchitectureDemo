@@ -1,5 +1,6 @@
-﻿using OnionArchitectureDemo.Business.Entities;
-namespace OnionArchitectureDemo.Business.Extensions
+﻿using OnionArchitectureDemo.DomainServices.Entities;
+
+namespace OnionArchitectureDemo.DomainServices.Extensions
 {
     internal static class EntityExtensions
     {

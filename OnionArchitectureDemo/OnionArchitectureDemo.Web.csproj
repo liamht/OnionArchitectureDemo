@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnionArchitectureDemo.DependencyInjection\OnionArchitectureDemo.DependencyInjection.csproj" />
+    <ProjectReference Include="..\OnionArchitectureDemo.DomainServices\OnionArchitectureDemo.DomainServices.csproj" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

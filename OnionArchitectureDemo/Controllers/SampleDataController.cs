@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using OnionArchitectureDemo.Business.Entities;
-using OnionArchitectureDemo.Business.Services;
+using OnionArchitectureDemo.DomainServices.Entities;
+using OnionArchitectureDemo.DomainServices.Services;
 
 namespace OnionArchitectureDemo.Web.Controllers
 {

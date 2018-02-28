@@ -1,4 +1,4 @@
-﻿namespace OnionArchitectureDemo.Business.Entities
+﻿namespace OnionArchitectureDemo.DomainServices.Entities
 {
     public class Car
     {
