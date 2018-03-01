@@ -9,5 +9,6 @@
         public bool HasSpareWheel { get; set; }
 
         public double Price { get; set; }
+        public int SalesListingId { get; set; }
     }
 }

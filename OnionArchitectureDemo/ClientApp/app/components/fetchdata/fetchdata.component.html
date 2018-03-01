@@ -1,6 +1,7 @@
 <h1>Weather forecast</h1>
 
 <p>This component demonstrates fetching data from the server.</p>
+<div class="sales-banner">SALE NOW ON!</div>
 
 <p *ngIf="!cars"><em>Loading...</em></p>
 
@@ -13,8 +14,22 @@
     </thead>
     <tbody>
         <tr *ngFor="let car of cars">
-            <td>{{ car.carName }}</td>
+            <td>
+                <a [routerLink]="['/car-details', car.salesListingId]">
+                    {{ car.carName }}
+                </a>
+            </td>
             <td>{{ car.hasSpareWheel }}</td>
         </tr>
     </tbody>
 </table>
+
+
+<style>
+    .sales-banner{
+        background:red;
+        color:white;
+        padding:15px;
+        font-size:20px;
+    }
+</style>

@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OnionArchitectureDemo.ApplicationServices\OnionArchitectureDemo.ApplicationServices.csproj" />
     <ProjectReference Include="..\OnionArchitectureDemo.DependencyInjection\OnionArchitectureDemo.DependencyInjection.csproj" />
     <ProjectReference Include="..\OnionArchitectureDemo.DomainServices\OnionArchitectureDemo.DomainServices.csproj" />
   </ItemGroup>

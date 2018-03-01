@@ -1,0 +1,21 @@
+<h1>Car Details</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+<div class="sales-banner">SALE NOW ON!</div>
+
+<p *ngIf="!car"><em>Loading...</em></p>
+
+<div *ngIf="cars">
+    <img src="https://placehold.it/250" />
+    <h3>{{car.Make}} <span>{{car.Model}}</span></h3>
+</div>
+
+
+<style>
+    .sales-banner {
+        background: red;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+    }
+</style>

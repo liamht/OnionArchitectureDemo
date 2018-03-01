@@ -25,7 +25,8 @@ namespace OnionArchitectureDemo.Web
         {
             services.AddMvc();
             services.MapDataDependencies();
-            services.MapBusinessDependencies();
+            services.MapApplicationServicesDependencies();
+            services.MapDomainServicesDependencies();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

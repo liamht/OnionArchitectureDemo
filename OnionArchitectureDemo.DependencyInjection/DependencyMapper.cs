@@ -4,12 +4,18 @@ using OnionArchitectureDemo.Data;
 using OnionArchitectureDemo.Data.Entities;
 using OnionArchitectureDemo.Data.EntityFramework;
 using System;
+using OnionArchitectureDemo.ApplicationServices;
 
 namespace OnionArchitectureDemo.DependencyInjection
 {
     public static class DependencyMapper
     {
-        public static void MapBusinessDependencies(this IServiceCollection services)
+        public static void MapApplicationServicesDependencies(this IServiceCollection services)
+        {
+            services.AddTransient<ICarSaleService, CarSaleService>();
+        }
+
+        public static void MapDomainServicesDependencies(this IServiceCollection services)
         {
             services.AddTransient<ICarService, CarService>();
         }

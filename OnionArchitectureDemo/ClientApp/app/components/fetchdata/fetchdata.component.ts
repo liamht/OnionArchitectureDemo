@@ -20,4 +20,5 @@ interface Car {
     make: string;
     model: string;
     hasSpareWheel: boolean;
+    salesListingId: number;
 }

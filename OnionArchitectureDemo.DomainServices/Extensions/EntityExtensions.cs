@@ -11,7 +11,8 @@ namespace OnionArchitectureDemo.DomainServices.Extensions
                 HasSpareWheel = car.HasSpareWheel,
                 Make = car.Make,
                 Model = car.Model,
-                Price = car.Price
+                Price = car.Price,
+                SalesListingId = car.SalesListingId
             };
         }
 

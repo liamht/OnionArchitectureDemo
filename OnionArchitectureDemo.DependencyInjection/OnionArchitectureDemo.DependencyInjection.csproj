@@ -6,6 +6,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnionArchitecture.Data.EntityFramework\OnionArchitectureDemo.Data.EntityFramework.csproj" />
+    <ProjectReference Include="..\OnionArchitectureDemo.ApplicationServices\OnionArchitectureDemo.ApplicationServices.csproj">
+      <Private>true</Private>
+    </ProjectReference>
     <ProjectReference Include="..\OnionArchitectureDemo.DomainServices\OnionArchitectureDemo.DomainServices.csproj" />
   </ItemGroup>
 
