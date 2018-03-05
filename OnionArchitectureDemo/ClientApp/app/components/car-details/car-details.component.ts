@@ -7,7 +7,7 @@ import { ActivatedRoute, Params } from '@angular/router';
     templateUrl: './car-details.component.html'
 })
 export class CarDetailsComponent {
-    public CarDetails: CarDetails;
+    public car: CarDetails;
     private carId: number;
 
     constructor(http: Http, @Inject('BASE_URL') baseUrl: string, private route: ActivatedRoute) {
@@ -19,7 +19,7 @@ export class CarDetailsComponent {
 
         http.get(baseUrl + 'api/Car/GetDetails?carId=' + this.carId)
             .subscribe(result => {
-                this.CarDetails = result.json() as CarDetails;
+                this.car = result.json() as CarDetails;
             }, error => console.error(error));
     }
 }

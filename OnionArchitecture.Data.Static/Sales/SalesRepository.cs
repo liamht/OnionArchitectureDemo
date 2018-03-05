@@ -12,7 +12,7 @@ namespace OnionArchitectureDemo.Data.Static.Sales
             var today = DateTime.Today;
             StaticData = new List<Sale>()
             {
-                new Sale(){ StartDate = today.AddDays(-21), EndDate = today.AddDays(14), MarkDownPercentage = 25 },
+                new Sale(){ StartDate = today.AddDays(-21), EndDate = today.AddDays(-14), MarkDownPercentage = 25 },
                 new Sale(){ StartDate = today.AddDays(-7), EndDate = today.AddDays(1), MarkDownPercentage = 25 },
             };
         }

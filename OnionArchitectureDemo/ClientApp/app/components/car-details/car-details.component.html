@@ -5,7 +5,7 @@
 
 <p *ngIf="!car"><em>Loading...</em></p>
 
-<div *ngIf="cars">
+<div *ngIf="car">
     <img src="https://placehold.it/250" />
     <h3>{{car.make}} <span>{{car.model}}</span></h3>
     <p class="old-price">was: {{car.preSalePrice}}</p>
