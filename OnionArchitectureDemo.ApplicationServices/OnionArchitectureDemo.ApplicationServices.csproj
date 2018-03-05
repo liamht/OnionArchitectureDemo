@@ -8,4 +8,8 @@
     <ProjectReference Include="..\OnionArchitectureDemo.DomainServices\OnionArchitectureDemo.DomainServices.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Cars\Commands\" />
+  </ItemGroup>
+
 </Project>

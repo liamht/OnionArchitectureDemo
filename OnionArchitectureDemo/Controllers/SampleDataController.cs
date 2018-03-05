@@ -2,8 +2,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using OnionArchitectureDemo.ApplicationServices;
-using OnionArchitectureDemo.DomainServices.Entities;
-using OnionArchitectureDemo.DomainServices.Services;
 using OnionArchitectureDemo.Web.Models;
 
 namespace OnionArchitectureDemo.Web.Controllers

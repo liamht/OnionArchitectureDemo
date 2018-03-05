@@ -1,10 +1,11 @@
-﻿using System;
+﻿using OnionArchitectureDemo.Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace OnionArchitectureDemo.Domain.Entities
 {
-    public class Sale
+    public class Sale : IDomainEntity
     {
         public int MarkDownPercentage { get; set; }
 

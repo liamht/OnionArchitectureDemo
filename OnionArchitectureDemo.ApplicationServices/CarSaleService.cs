@@ -1,26 +1,27 @@
-﻿using OnionArchitectureDemo.DomainServices.Entities;
-using OnionArchitectureDemo.DomainServices.Services;
+﻿using OnionArchitectureDemo.ApplicationServices.Cars;
+using OnionArchitectureDemo.DomainServices;
 using System;
 
 namespace OnionArchitectureDemo.ApplicationServices
 {
     public interface ICarSaleService
     {
-        double GetPreSalePrice(Car c);
+        double GetPreSalePrice(CarModel c);
     }
 
     public class CarSaleService : ICarSaleService
     {
-        private ISaleService _service;
+        private IUnitOfWork _uow;
 
-        public CarSaleService(ISaleService service)
+        public CarSaleService(IUnitOfWork uow)
         {
-            _service = service;
+            _uow = uow;
         }
 
-        public double GetPreSalePrice(Car car)
+        public double GetPreSalePrice(CarModel car)
         {
-            var currentSale = _service.GetCurrentSale();
+            var today = DateTime.Today;
+            var currentSale = _uow.Sales.Single(c => c.StartDate <= today && c.EndDate > today);
             if (currentSale == null)
             {
                 return car.Price;

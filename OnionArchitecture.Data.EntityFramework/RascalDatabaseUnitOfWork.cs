@@ -1,4 +1,6 @@
-﻿using OnionArchitectureDemo.Domain.Entities;
+﻿using OnionArchitectureDemo.Data.EntityFramework.Cars;
+using OnionArchitectureDemo.Data.EntityFramework.Sales;
+using OnionArchitectureDemo.Domain.Entities;
 using OnionArchitectureDemo.DomainServices;
 using System;
 

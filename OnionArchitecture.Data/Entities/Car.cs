@@ -1,6 +1,9 @@
-﻿namespace OnionArchitectureDemo.Domain.Entities
+﻿using System;
+using OnionArchitectureDemo.Domain.Common;
+
+namespace OnionArchitectureDemo.Domain.Entities
 {
-    public class Car
+    public class Car : IDomainEntity
     {
         public string Make { get; set; }
 
@@ -9,6 +12,7 @@
         public bool HasSpareWheel { get; set; }
 
         public double Price { get; set; }
+
         public int SalesListingId { get; set; }
     }
 }
