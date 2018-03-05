@@ -1,11 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using OnionArchitectureDemo.Domain;
 using OnionArchitectureDemo.Domain.Entities;
 using OnionArchitectureDemo.Data.EntityFramework;
-using System;
-using OnionArchitectureDemo.ApplicationServices;
 using OnionArchitectureDemo.DomainServices;
 using OnionArchitectureDemo.Data.EntityFramework.Cars;
+using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarDetails;
+using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarList;
 
 namespace OnionArchitectureDemo.DependencyInjection
 {
@@ -13,14 +12,11 @@ namespace OnionArchitectureDemo.DependencyInjection
     {
         public static void MapApplicationServicesDependencies(this IServiceCollection services)
         {
-            services.AddTransient<ICarSaleService, CarSaleService>();
+            services.AddTransient<IGetCarDetailsQuery, GetCarDetailsQuery>();
+            services.AddTransient<IGetCarListQuery, GetCarListQuery>();
         }
 
         public static void MapDomainServicesDependencies(this IServiceCollection services)
-        {
-        }
-
-        public static void MapDataDependencies(this IServiceCollection services)
         {
             services.AddTransient<IRepository<Car>, CarRepository>();
             services.AddTransient<IUnitOfWork, RascalDatabaseUnitOfWork>();

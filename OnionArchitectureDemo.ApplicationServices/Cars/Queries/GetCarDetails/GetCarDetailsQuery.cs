@@ -1,11 +1,10 @@
-﻿using OnionArchitectureDemo.ApplicationServices.Common;
-using OnionArchitectureDemo.Domain.Entities;
+﻿using OnionArchitectureDemo.Domain.Entities;
 using OnionArchitectureDemo.DomainServices;
 using System;
 
 namespace OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarDetails
 {
-    public class GetCarDetailsQuery
+    public class GetCarDetailsQuery : IGetCarDetailsQuery
     {
         private readonly IUnitOfWork _uow;
 

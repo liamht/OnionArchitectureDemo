@@ -1,35 +1,32 @@
 using System.Collections.Generic;
-using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using OnionArchitectureDemo.ApplicationServices;
-using OnionArchitectureDemo.Web.Models;
+using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarDetails;
+using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarList;
 
 namespace OnionArchitectureDemo.Web.Controllers
 {
     [Route("api/[controller]")]
     public class SampleDataController : Controller
     {
-        private ICarService _carService;
-        private ICarSaleService _saleService;
+        private IGetCarListQuery _carListQuery;
+        private IGetCarDetailsQuery _carDetailsQuery;
 
-        public SampleDataController(ICarService carService)
+        public SampleDataController(IGetCarListQuery carListQuery, IGetCarDetailsQuery detailsQuery)
         {
-            _carService = carService;
+            _carListQuery = carListQuery;
+            _carDetailsQuery = detailsQuery;
         }
 
         [HttpGet("[action]")]
-        public IEnumerable<Car> GetCars()
+        public IEnumerable<CarModel> GetCars()
         {
-            return _carService.GetAllCars().AsEnumerable();
+            return _carListQuery.Execute();
         }
 
         [HttpGet("[action]")]
-        public CarDetails GetCarDetails(int carId)
+        public CarDetailsModel GetCarDetails(int carId)
         {
-            var car = _carService.GetCarBySalesListingId(carId);
-            var preSalePrice = _saleService.GetPreSalePrice(car);
-
-            return new CarDetails(car, preSalePrice);
+            return _carDetailsQuery.Execute(carId);
         }
     }
 }
