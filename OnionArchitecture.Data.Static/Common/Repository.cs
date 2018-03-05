@@ -3,9 +3,8 @@ using OnionArchitectureDemo.DomainServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace OnionArchitectureDemo.Data.EntityFramework.Common
+namespace OnionArchitectureDemo.Data.Static.Common
 {
     public class Repository<T> : IRepository<T> where T : IDomainEntity
     {

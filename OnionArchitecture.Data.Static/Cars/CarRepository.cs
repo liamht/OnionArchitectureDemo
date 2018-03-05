@@ -1,12 +1,8 @@
-﻿using OnionArchitectureDemo.Data.EntityFramework.Common;
+﻿using OnionArchitectureDemo.Data.Static.Common;
 using OnionArchitectureDemo.Domain.Entities;
-using OnionArchitectureDemo.DomainServices;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
 
-namespace OnionArchitectureDemo.Data.EntityFramework.Cars
+namespace OnionArchitectureDemo.Data.Static.Cars
 {
     public class CarRepository : Repository<Car>
     {

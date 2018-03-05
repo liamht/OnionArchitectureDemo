@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OnionArchitecture.Data.EntityFramework\OnionArchitectureDemo.Data.EntityFramework.csproj" />
+    <ProjectReference Include="..\OnionArchitecture.Data.Static\OnionArchitectureDemo.Data.Static.csproj" />
     <ProjectReference Include="..\OnionArchitectureDemo.ApplicationServices\OnionArchitectureDemo.ApplicationServices.csproj">
       <Private>true</Private>
     </ProjectReference>

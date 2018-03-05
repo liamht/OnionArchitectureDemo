@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitectureDemo.Domain", "OnionArchitecture.Data\OnionArchitectureDemo.Domain.csproj", "{8A82D324-052B-45A1-88E6-20CB14CAFD79}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitectureDemo.Data.EntityFramework", "OnionArchitecture.Data.EntityFramework\OnionArchitectureDemo.Data.EntityFramework.csproj", "{249C2DC5-A32B-4320-846D-DFFDF79F89B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitectureDemo.Data.Static", "OnionArchitecture.Data.Static\OnionArchitectureDemo.Data.Static.csproj", "{249C2DC5-A32B-4320-846D-DFFDF79F89B5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitectureDemo.DependencyInjection", "OnionArchitectureDemo.DependencyInjection\OnionArchitectureDemo.DependencyInjection.csproj", "{B6648728-8A62-4935-9351-A922C634DA18}"
 EndProject

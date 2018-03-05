@@ -24,7 +24,6 @@ namespace OnionArchitectureDemo.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.MapDataDependencies();
             services.MapApplicationServicesDependencies();
             services.MapDomainServicesDependencies();
         }

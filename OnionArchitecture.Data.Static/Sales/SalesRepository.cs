@@ -1,12 +1,9 @@
-﻿using OnionArchitectureDemo.Data.EntityFramework.Common;
+﻿using OnionArchitectureDemo.Data.Static.Common;
 using OnionArchitectureDemo.Domain.Entities;
-using OnionArchitectureDemo.DomainServices;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
 
-namespace OnionArchitectureDemo.Data.EntityFramework.Sales
+namespace OnionArchitectureDemo.Data.Static.Sales
 {
     public class SalesRepository : Repository<Sale>
     {
