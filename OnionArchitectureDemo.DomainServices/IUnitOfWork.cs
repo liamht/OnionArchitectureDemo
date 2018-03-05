@@ -1,7 +1,7 @@
-﻿using OnionArchitectureDemo.Data.Entities;
+﻿using OnionArchitectureDemo.Domain.Entities;
 using System;
 
-namespace OnionArchitectureDemo.Data
+namespace OnionArchitectureDemo.DomainServices
 {
     public interface IUnitOfWork : IDisposable
     {

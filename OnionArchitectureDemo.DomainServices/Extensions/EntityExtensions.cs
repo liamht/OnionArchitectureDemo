@@ -4,7 +4,7 @@ namespace OnionArchitectureDemo.DomainServices.Extensions
 {
     internal static class EntityExtensions
     {
-        internal static Car ToBusinessEntity(this Data.Entities.Car car)
+        internal static Car ToBusinessEntity(this Domain.Entities.Car car)
         {
             return new Car()
             {
@@ -16,7 +16,7 @@ namespace OnionArchitectureDemo.DomainServices.Extensions
             };
         }
 
-        internal static Sale ToBusinessEntity(this Data.Entities.Sale sale)
+        internal static Sale ToBusinessEntity(this Domain.Entities.Sale sale)
         {
             return new Sale()
             { 

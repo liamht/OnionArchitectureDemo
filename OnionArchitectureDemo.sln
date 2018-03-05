@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Domain Model", "4. Domai
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{FB819DFF-A6B0-421B-9984-D8B2AD35490E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitectureDemo.Data", "OnionArchitecture.Data\OnionArchitectureDemo.Data.csproj", "{8A82D324-052B-45A1-88E6-20CB14CAFD79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitectureDemo.Domain", "OnionArchitecture.Data\OnionArchitectureDemo.Domain.csproj", "{8A82D324-052B-45A1-88E6-20CB14CAFD79}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitectureDemo.Data.EntityFramework", "OnionArchitecture.Data.EntityFramework\OnionArchitectureDemo.Data.EntityFramework.csproj", "{249C2DC5-A32B-4320-846D-DFFDF79F89B5}"
 EndProject
@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitectureDemo.Domai
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application Services", "2. Application Services", "{ACD80A1F-07A5-42EC-850A-27484A86176A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitectureDemo.ApplicationServices", "OnionArchitectureDemo.ApplicationServices\OnionArchitectureDemo.ApplicationServices.csproj", "{796D5040-B7D9-4A77-89DF-91EB7EDD714D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitectureDemo.ApplicationServices", "OnionArchitectureDemo.ApplicationServices\OnionArchitectureDemo.ApplicationServices.csproj", "{796D5040-B7D9-4A77-89DF-91EB7EDD714D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

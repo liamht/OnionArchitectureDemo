@@ -1,6 +1,6 @@
 ﻿using OnionArchitectureDemo.DomainServices.Entities;
 using OnionArchitectureDemo.DomainServices.Extensions;
-using OnionArchitectureDemo.Data;
+using OnionArchitectureDemo.Domain;
 using System.Linq;
 
 namespace OnionArchitectureDemo.DomainServices.Services

@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OnionArchitecture.Data\OnionArchitectureDemo.Data.csproj" />
+    <ProjectReference Include="..\OnionArchitecture.Data\OnionArchitectureDemo.Domain.csproj" />
   </ItemGroup>
 
 </Project>

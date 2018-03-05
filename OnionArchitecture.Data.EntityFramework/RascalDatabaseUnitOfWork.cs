@@ -1,4 +1,5 @@
-﻿using OnionArchitectureDemo.Data.Entities;
+﻿using OnionArchitectureDemo.Domain.Entities;
+using OnionArchitectureDemo.DomainServices;
 using System;
 
 namespace OnionArchitectureDemo.Data.EntityFramework

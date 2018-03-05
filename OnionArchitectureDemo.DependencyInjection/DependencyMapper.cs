@@ -1,10 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using OnionArchitectureDemo.DomainServices.Services;
-using OnionArchitectureDemo.Data;
-using OnionArchitectureDemo.Data.Entities;
+using OnionArchitectureDemo.Domain;
+using OnionArchitectureDemo.Domain.Entities;
 using OnionArchitectureDemo.Data.EntityFramework;
 using System;
 using OnionArchitectureDemo.ApplicationServices;
+using OnionArchitectureDemo.DomainServices;
 
 namespace OnionArchitectureDemo.DependencyInjection
 {

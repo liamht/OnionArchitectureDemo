@@ -1,4 +1,5 @@
-﻿using OnionArchitectureDemo.Data.Entities;
+﻿using OnionArchitectureDemo.Domain.Entities;
+using OnionArchitectureDemo.DomainServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,9 +7,6 @@ using System.Linq.Expressions;
 
 namespace OnionArchitectureDemo.Data.EntityFramework
 {
-    /// <summary>
-    /// NOTE: this should all be using EF with a real database. Usually in a shared dataacess project.
-    /// </summary>
     public class CarRepository : IRepository<Car>
     {
         public void Add(Car entity)

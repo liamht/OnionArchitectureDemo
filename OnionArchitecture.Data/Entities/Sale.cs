@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OnionArchitectureDemo.Data.Entities
+namespace OnionArchitectureDemo.Domain.Entities
 {
     public class Sale
     {

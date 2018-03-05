@@ -1,4 +1,4 @@
-﻿using OnionArchitectureDemo.Data;
+﻿using OnionArchitectureDemo.Domain;
 using OnionArchitectureDemo.DomainServices.Entities;
 using OnionArchitectureDemo.DomainServices.Extensions;
 using System;
