@@ -7,7 +7,9 @@
 
 <div *ngIf="cars">
     <img src="https://placehold.it/250" />
-    <h3>{{car.Make}} <span>{{car.Model}}</span></h3>
+    <h3>{{car.make}} <span>{{car.model}}</span></h3>
+    <p class="old-price">was: {{car.preSalePrice}}</p>
+    <p class="new-price">was: {{car.price}}</p>
 </div>
 
 
@@ -17,5 +19,13 @@
         color: white;
         padding: 15px;
         font-size: 20px;
+    }
+
+    .old-price{
+        color:red;
+    }
+
+    .new-price{
+        color: green;
     }
 </style>

@@ -17,7 +17,7 @@ export class CarDetailsComponent {
             console.log("Current Car Id = " + this.carId)
         })
 
-        http.get(baseUrl + 'api/SampleData/GetCarDetails?carId=' + this.carId)
+        http.get(baseUrl + 'api/Car/GetDetails?carId=' + this.carId)
             .subscribe(result => {
                 this.CarDetails = result.json() as CarDetails;
             }, error => console.error(error));
@@ -25,8 +25,8 @@ export class CarDetailsComponent {
 }
 
 interface CarDetails {
-    carName: string;
+    price: number;
+    preSalePrice: number;
     make: string;
     model: string;
-    hasSpareWheel: boolean;
 }
