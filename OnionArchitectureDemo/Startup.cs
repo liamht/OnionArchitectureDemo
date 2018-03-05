@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OnionArchitectureDemo.DependencyInjection;
+using OnionArchitectureDemo.Web.Cars.Services;
 
 namespace OnionArchitectureDemo.Web
 {
@@ -24,6 +25,9 @@ namespace OnionArchitectureDemo.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddTransient<ICreateCarViewModelFactory, CreateCarViewModelFactory>();
+
             services.MapApplicationServicesDependencies();
             services.MapDomainServicesDependencies();
         }

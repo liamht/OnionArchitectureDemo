@@ -5,6 +5,8 @@ using OnionArchitectureDemo.Data.Static.Cars;
 using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarDetails;
 using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarList;
 using OnionArchitectureDemo.DomainServices.Common;
+using OnionArchitectureDemo.ApplicationServices.Cars.Commands;
+using OnionArchitectureDemo.ApplicationServices.Cars.Commands.Factory;
 
 namespace OnionArchitectureDemo.DependencyInjection
 {
@@ -14,6 +16,8 @@ namespace OnionArchitectureDemo.DependencyInjection
         {
             services.AddTransient<IGetCarDetailsQuery, GetCarDetailsQuery>();
             services.AddTransient<IGetCarListQuery, GetCarListQuery>();
+            services.AddTransient<ICreateCarCommand, CreateCarCommand>();
+            services.AddTransient<ICarFactory, CarFactory>();
         }
 
         public static void MapDomainServicesDependencies(this IServiceCollection services)

@@ -42,7 +42,7 @@ namespace OnionArchitectureDemo.Data.Static
 
         public void SaveChanges()
         {
-            throw new NotImplementedException();
+            //do nothing as we are saving to a static list
         }
     }
 }

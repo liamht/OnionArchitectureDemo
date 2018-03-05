@@ -5,6 +5,8 @@
 
 <p *ngIf="!cars"><em>Loading...</em></p>
 
+<a [routerLink]="['/cars/add']" class="btn">Create</a>
+
 <table class='table' *ngIf="cars">
     <thead>
         <tr>
@@ -14,7 +16,7 @@
     <tbody>
         <tr *ngFor="let car of cars">
             <td>
-                <a [routerLink]="['/car-details', car.salesListingId]">
+                <a [routerLink]="['/cars', car.salesListingId]">
                     {{ car.carName }}
                 </a>
             </td>

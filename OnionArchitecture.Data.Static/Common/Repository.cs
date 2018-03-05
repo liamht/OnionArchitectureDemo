@@ -8,7 +8,7 @@ namespace OnionArchitectureDemo.Data.Static.Common
 {
     public class Repository<T> : IRepository<T> where T : IDomainEntity
     {
-        protected List<T> StaticData { get; set; }
+        protected static List<T> StaticData { get; set; }
 
         public void Add(T entity)
         {
