@@ -25,9 +25,8 @@ namespace OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarList
         {
             return new CarModel()
             {
-                Make = c.Make,
-                Model = c.Model,
-                Price = c.Price
+                CarName = c.Make + " " + c.Model,
+                SalesListingId = c.SalesListingId
             };
         }
     }

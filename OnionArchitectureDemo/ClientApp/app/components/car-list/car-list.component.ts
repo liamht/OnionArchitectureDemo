@@ -17,8 +17,5 @@ export class CarListComponent {
 
 interface Car {
     carName: string;
-    make: string;
-    model: string;
-    hasSpareWheel: boolean;
     salesListingId: number;
 }
