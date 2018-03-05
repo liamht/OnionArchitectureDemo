@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 
 @Component({
     selector: 'car-add',
-    templateUrl: './car-add.component.html'
+    templateUrl: './Add.component.html'
 })
 export class CarAddComponent {
 

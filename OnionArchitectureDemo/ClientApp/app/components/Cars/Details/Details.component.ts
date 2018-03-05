@@ -4,7 +4,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
     selector: 'car-details',
-    templateUrl: './car-details.component.html'
+    templateUrl: './Details.component.html'
 })
 export class CarDetailsComponent {
     public car: CarDetails;

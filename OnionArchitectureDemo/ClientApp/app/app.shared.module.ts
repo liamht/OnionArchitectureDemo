@@ -7,9 +7,9 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './components/app/app.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
-import { CarListComponent } from './components/car-list/car-list.component';
-import { CarDetailsComponent } from './components/car-details/car-details.component';
-import { CarAddComponent } from './components/car-add/car-add.component';
+import { CarListComponent } from './components/Cars/List/List.component';
+import { CarDetailsComponent } from './components/Cars/Details/Details.component';
+import { CarAddComponent } from './components/Cars/Add/Add.component';
 
 @NgModule({
     declarations: [

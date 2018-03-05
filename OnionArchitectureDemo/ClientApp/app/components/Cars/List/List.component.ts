@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 
 @Component({
     selector: 'car-list',
-    templateUrl: './car-list.component.html'
+    templateUrl: './List.component.html'
 })
 export class CarListComponent {
     public cars: Car[];
