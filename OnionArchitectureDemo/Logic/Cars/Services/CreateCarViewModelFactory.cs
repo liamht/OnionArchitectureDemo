@@ -1,10 +1,6 @@
-﻿using OnionArchitectureDemo.Web.Cars.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using OnionArchitectureDemo.Web.Logic.Cars.ViewModels;
 
-namespace OnionArchitectureDemo.Web.Cars.Services
+namespace OnionArchitectureDemo.Web.Logic.Cars.Services
 {
     public class CreateCarViewModelFactory : ICreateCarViewModelFactory
     {

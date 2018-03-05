@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 using OnionArchitectureDemo.ApplicationServices.Cars.Commands;
 using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarDetails;
 using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarList;
-using OnionArchitectureDemo.Web.Cars.Services;
-using OnionArchitectureDemo.Web.Cars.ViewModels;
+using OnionArchitectureDemo.Web.Logic.Cars.Services;
+using OnionArchitectureDemo.Web.Logic.Cars.ViewModels;
 
-namespace OnionArchitectureDemo.Web.Cars
+namespace OnionArchitectureDemo.Web.Logic.Cars
 {
     [Route("api/[controller]")]
     public class CarController : Controller

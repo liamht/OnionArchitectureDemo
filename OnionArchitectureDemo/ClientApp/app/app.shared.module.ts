@@ -5,8 +5,8 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './components/app/app.component';
-import { NavMenuComponent } from './components/navmenu/navmenu.component';
-import { HomeComponent } from './components/home/home.component';
+import { NavMenuComponent } from './components/Nav/navmenu.component';
+import { HomeComponent } from './components/Home/home.component';
 import { CarListComponent } from './components/Cars/List/List.component';
 import { CarDetailsComponent } from './components/Cars/Details/Details.component';
 import { CarAddComponent } from './components/Cars/Add/Add.component';

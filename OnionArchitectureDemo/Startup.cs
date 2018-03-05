@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OnionArchitectureDemo.DependencyInjection;
-using OnionArchitectureDemo.Web.Cars.Services;
+using OnionArchitectureDemo.Web.Logic.Cars.Services;
 
 namespace OnionArchitectureDemo.Web
 {

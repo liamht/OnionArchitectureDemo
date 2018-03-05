@@ -1,11 +1,7 @@
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace OnionArchitectureDemo.Web.Controllers
+namespace OnionArchitectureDemo.Web.Logic.Controllers
 {
     public class HomeController : Controller
     {
