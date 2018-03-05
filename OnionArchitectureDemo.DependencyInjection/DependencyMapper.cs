@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using OnionArchitectureDemo.Domain.Entities;
 using OnionArchitectureDemo.Data.Static;
-using OnionArchitectureDemo.DomainServices;
 using OnionArchitectureDemo.Data.Static.Cars;
 using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarDetails;
 using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarList;
+using OnionArchitectureDemo.DomainServices.Common;
 
 namespace OnionArchitectureDemo.DependencyInjection
 {

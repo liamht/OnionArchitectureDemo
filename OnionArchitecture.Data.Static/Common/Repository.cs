@@ -1,5 +1,5 @@
 ﻿using OnionArchitectureDemo.Domain.Common;
-using OnionArchitectureDemo.DomainServices;
+using OnionArchitectureDemo.DomainServices.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;

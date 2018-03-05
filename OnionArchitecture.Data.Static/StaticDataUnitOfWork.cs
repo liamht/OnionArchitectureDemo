@@ -1,7 +1,7 @@
 ﻿using OnionArchitectureDemo.Data.Static.Cars;
 using OnionArchitectureDemo.Data.Static.Sales;
 using OnionArchitectureDemo.Domain.Entities;
-using OnionArchitectureDemo.DomainServices;
+using OnionArchitectureDemo.DomainServices.Common;
 using System;
 
 namespace OnionArchitectureDemo.Data.Static

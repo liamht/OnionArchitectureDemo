@@ -7,14 +7,14 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './components/app/app.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
+import { CarListComponent } from './components/car-list/car-list.component';
 import { CarDetailsComponent } from './components/car-details/car-details.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavMenuComponent,
-        FetchDataComponent,
+        CarListComponent,
         HomeComponent,
         CarDetailsComponent
     ],
@@ -25,7 +25,7 @@ import { CarDetailsComponent } from './components/car-details/car-details.compon
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'car-list', component: CarListComponent },
             { path: 'car-details/:id', component: CarDetailsComponent },
             { path: '**', redirectTo: 'home' }
         ])

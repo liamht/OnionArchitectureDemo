@@ -6,25 +6,25 @@ using OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarList;
 namespace OnionArchitectureDemo.Web.Controllers
 {
     [Route("api/[controller]")]
-    public class SampleDataController : Controller
+    public class CarController : Controller
     {
         private IGetCarListQuery _carListQuery;
         private IGetCarDetailsQuery _carDetailsQuery;
 
-        public SampleDataController(IGetCarListQuery carListQuery, IGetCarDetailsQuery detailsQuery)
+        public CarController(IGetCarListQuery carListQuery, IGetCarDetailsQuery detailsQuery)
         {
             _carListQuery = carListQuery;
             _carDetailsQuery = detailsQuery;
         }
 
         [HttpGet("[action]")]
-        public IEnumerable<CarModel> GetCars()
+        public IEnumerable<CarModel> GetAll()
         {
             return _carListQuery.Execute();
         }
 
         [HttpGet("[action]")]
-        public CarDetailsModel GetCarDetails(int carId)
+        public CarDetailsModel GetDetails(int carId)
         {
             return _carDetailsQuery.Execute(carId);
         }
