@@ -9,6 +9,9 @@ namespace OnionArchitectureDemo.ApplicationServices.Cars.Commands.Factory
     {
         public Car Create(string make, string model, double price)
         {
+            ThrowIfNull(make, "Make");
+            ThrowIfNull(model, "Model");
+
             var car = new Car();
 
             car.Make = make;
@@ -16,6 +19,14 @@ namespace OnionArchitectureDemo.ApplicationServices.Cars.Commands.Factory
             car.Price = price;
 
             return car;
+        }
+
+        private void ThrowIfNull(object value, string propertyName)
+        {
+            if (value == null)
+            {
+                throw new ArgumentNullException($"{propertyName} cannot be null");
+            }
         }
     }
 }
