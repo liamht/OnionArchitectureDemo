@@ -1,3 +1,6 @@
+![rascal logo](https://github.com/rascal-systems/OnionArchitectureDemo/blob/master/rascal-logo.png)
+
+
 # Onion Architecture Demo
 ### The **rascal** agreed architecture
 The design pattern at rascal loosely follows Jeffrey Palermo's Onion Architecture. There is also a helpful video explanation on YouTube and a breakdown of the Infrastructure, Application and Domain layers seen on StackOverflow, which are recommended.
