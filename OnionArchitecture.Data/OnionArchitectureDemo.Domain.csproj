@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>OnionArchitectureDemo.Data</AssemblyName>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>OnionArchitectureDemo.Domain</AssemblyName>
   </PropertyGroup>
 
 </Project>
