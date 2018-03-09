@@ -12,7 +12,7 @@ This is a layer for helper classes, common code and other non-domain functionali
 #### Domain Layer
 Responsible for the solution's Value Objects, Domain Models, and Domain Services.
 
-We have agreed to add logic to our domain models when it makes sense to do so rather than using the anaemic domain model. Services may be added into the domain layer, however these services should not look into other DLL's to do any logic, they should be contained within the domain models themselves. Anything that needs to look into another layer should be inside the domain services layer
+We have agreed to add logic to our domain models when it makes sense to do so rather than using an [anaemic domain model](https://www.martinfowler.com/bliki/AnemicDomainModel.html). Services may be added into the domain layer, however these services should not look into other non-core DLL's to do any logic. The logic the domain layer can provide by services or objects should instead be contained within the domain models inside the layer themselves. Anything that needs to look into another layer should be inside the domain services layer. An example of an acceptable method inside the domain layer is a boolean IsOnSale() method, which compares todays date to a domain model's onSaleDate and returns true or false accordingly.
 
 #### Domain Services Layer
 Domain services make it easier to provide separation of concerns between your domain entities themselves and the logic of how to interact with them, meaning that it is more clean when importing the domain layers DLL into an existing project.
