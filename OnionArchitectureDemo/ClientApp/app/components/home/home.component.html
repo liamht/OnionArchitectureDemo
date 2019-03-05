@@ -1,8 +1,0 @@
-<h1>Hello, world!</h1>
-<p>This basic application should showcase the concept of the onion architecure, inside an angular.js and .NET Core project.</p>
-<p>The concept of the onion architecture is to seperate concerns properly, meaning that it is easier to switch dependencies on a project (eg: if you wanted to stop using entity framework with migrations and just use a database first edmx model.)</p>
-<p>By putting each item inside its own layer and by specifying those layers upfront, you will naturaly move towards code that satisfys seperation of concerns naturally</p>
-
-<h3>Rules</h3>
-<p>As a hard rule, any layer may reference a layer with a higher number (eg: the UI layer can reference the business layer and any infrastructure layers). However it is advisable to keep a clean seperation between your business and data layers.</p>
-<p>It is encouraged to reuse project between dependent applications. Eg: if your data layer can be used on multiple websites, re-use it</p>
