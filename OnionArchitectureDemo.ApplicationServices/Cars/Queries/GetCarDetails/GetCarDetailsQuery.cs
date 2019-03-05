@@ -1,6 +1,7 @@
 ﻿using OnionArchitectureDemo.Domain.Entities;
 using OnionArchitectureDemo.DomainServices.Common;
 using System;
+using System.Linq;
 
 namespace OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarDetails
 {
@@ -18,6 +19,11 @@ namespace OnionArchitectureDemo.ApplicationServices.Cars.Queries.GetCarDetails
             var today = DateTime.Today;
 
             var car = _uow.Cars.Single(c => c.SalesListingId == carListingId);
+
+            if (car == null)
+            {
+                throw new NullReferenceException("Could not find car with the given listing Id");
+            }
 
             var sale = _uow.Sales.Single(c => c.StartDate <= today && c.EndDate > DateTime.Today);
 

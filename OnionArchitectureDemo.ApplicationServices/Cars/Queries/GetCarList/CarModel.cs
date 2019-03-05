@@ -2,7 +2,7 @@
 {
     public class CarModel
     {
-        public double SalesListingId { get; set; }
+        public long SalesListingId { get; set; }
         public string CarName { get; set; }
     }
 }
