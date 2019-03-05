@@ -1,9 +1,6 @@
-![rascal logo](https://github.com/rascal-systems/OnionArchitectureDemo/blob/master/rascal-logo.png)
-
-
 # Onion Architecture Demo
-### The **rascal** agreed architecture
-The design pattern at rascal loosely follows Jeffrey Palermo's Onion Architecture. There is also a [helpful video explanation on YouTube](https://www.youtube.com/watch?v=pL9XeNjy_z4) and a [breakdown of the Infrastructure, Application and Domain layers seen on StackOverflow](https://stackoverflow.com/questions/2268699/domain-driven-design-domain-service-application-service/5252647#5252647), which are recommended.
+### The **ews** proposed architecture
+The design pattern at ews loosely follows Jeffrey Palermo's Onion Architecture. There is also a [helpful video explanation on YouTube](https://www.youtube.com/watch?v=pL9XeNjy_z4) and a [breakdown of the Infrastructure, Application and Domain layers seen on StackOverflow](https://stackoverflow.com/questions/2268699/domain-driven-design-domain-service-application-service/5252647#5252647), which are recommended.
 
 ### Explanation
 #### Core Layer
@@ -39,5 +36,5 @@ The web UI, the database, a web API the application consumes for up-to-date Issu
 To contribute and suggest changes, please fork this repo and create pull requests when needed.
 
 #### Notes
-It's also worth noting that this solution makes use of the **rascal** tech stack also; including Angularjs, .NET Core and xUnit 
+It's also worth noting that this solution makes use of the **ews** tech stack also; including .NET Core api and xUnit 
 
